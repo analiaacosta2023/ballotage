@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ballotage Presidencial</title>
+</head>
+
+<body>
+    <main class="bg-black">
+        <div class="flex flex-col text-white items-center py-8">
+            <h1 class="text-2xl">Ballotage Presidencial</h1>
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+            <div id="instructions" class="md:basis-2/3 flex flex-col text-white p-6">
+                <h2 class="mb-2 text-xl">Instrucciones del juego:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia incidunt adipisci magni nesciunt
+                    perspiciatis vero, fuga dicta aut aliquam alias omnis minus harum architecto cum minima expedita
+                    repellendus rem numquam.</p>
+            </div>
+            <div class="flex justify-center md:basis-1/3">
+                <div id="login" class="flex flex-col text-slate-800 bg-slate-700 text-white p-6 rounded-lg mb-6">
+                    <h2 class="mb-2 text-xl">Ingreso:</h2>
+                    <form action="submit" class="w-full max-w-sm mb-2">
+                        <div class="md:flex md:items-center mb-6">
+                            <div class="md:w-1/3">
+                                <label class="block text-slate-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                    for="inline-full-name">
+                                    Usuario
+                                </label>
+                            </div>
+                            <div class="md:w-2/3">
+                                <input
+                                    class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                    id="inline-full-name" type="text">
+                            </div>
+                        </div>
+                        <div class="md:flex md:items-center mb-6">
+                            <div class="md:w-1/3">
+                                <label class="block text-slate-500 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                    for="inline-password">
+                                    Contraseña
+                                </label>
+                            </div>
+                            <div class="md:w-2/3">
+                                <input
+                                    class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                    id="inline-password" type="password">
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                                type="button">Ingresar</button>
+                        </div>
+
+                    </form>
+                    <a class="text-sm" href="#">No tienes cuenta? Registrate</a>
+                    <a class="text-sm" href="#">Olvidaste la contraseña?</a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
