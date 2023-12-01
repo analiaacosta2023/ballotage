@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>IPC Argentina</title>
+</head>
+
+<body class="bg-slate-300 font-montagu">
+    <main>
+        <div class="flex flex-col bg-sky-600 text-white items-center py-8 shadow-[0_10px_25px_2px_rgba(30,41,59,0.7)]">
+            <h1 class="text-2xl">IPC Argentina</h1>
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+            <p>¡Bienvenido al desafío del Índice de Precios al Consumidor (IPC) en Argentina!</p>
+        </div>
+        <div class="container mx-auto mt-5">
+            <div class="flex flex-col xl:flex-row">
+                <div id="instructions" class="xl:basis-2/3 flex flex-col text-slate-800 p-6">
+                    <h2 class="mb-2 text-xl"><span class="underline">Introducción</span>:</h2>
+                    <p>El Índice de Precios al Consumidor, o IPC, es una herramienta clave para medir la variación de
+                        precios de un conjunto específico de bienes y servicios que consume la población. En Argentina,
+                        este
+                        índice refleja las fluctuaciones en los precios de productos esenciales como alimentos,
+                        vivienda,
+                        transporte, educación y más. Es una herramienta fundamental para entender cómo la inflación
+                        afecta
+                        el poder adquisitivo de los ciudadanos.</p>
+                    <h2 class="my-2 text-xl">¿Cómo se calcula el IPC?</h2>
+                    <p>El cálculo del IPC implica tomar un conjunto representativo de bienes y servicios, conocido como
+                        "canasta de consumo", y rastrear sus precios a lo largo del tiempo. Este proceso implica un
+                        minucioso trabajo de recopilación de datos y análisis estadístico. La variación porcentual en
+                        los
+                        precios de estos elementos compone el índice, que se utiliza para evaluar la inflación y su
+                        impacto
+                        en la economía.</p>
+                </div>
+                <div class="flex justify-center xl:basis-1/3">
+                    <div id="login" class="flex flex-col text-slate-800 bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+                        <h2 class="mb-2 text-xl"><span class="underline">Ingreso</span>:</h2>
+                        <form action="submit" class="w-full max-w-sm mb-2">
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                    <label class="block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                        for="inline-full-name">
+                                        Usuario
+                                    </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input
+                                        class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                        id="inline-full-name" type="text">
+                                </div>
+                            </div>
+                            <div class="md:flex md:items-center mb-6">
+                                <div class="md:w-1/3">
+                                    <label class="block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
+                                        for="inline-password">
+                                        Contraseña
+                                    </label>
+                                </div>
+                                <div class="md:w-2/3">
+                                    <input
+                                        class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                        id="inline-password" type="password">
+                                </div>
+                            </div>
+                            <div class="flex justify-center">
+                                <button
+                                    class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                                    type="button">Ingresar</button>
+                            </div>
+
+                        </form>
+                        <a class="text-sm" href="#">No tienes cuenta? Registrate</a>
+                        <a class="text-sm" href="#">Olvidaste la contraseña?</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class=" text-slate-800 p-6">
+                <h2 class="mt-2 text-xl"><span class="underline">Instrucciones para el juego</span> :</h2>
+                <p>¡Preparate para poner a prueba tu habilidad para prever el futuro económico en el Desafío del IPC!
+                    Seguí las instrucciones para participar:</p>
+                <h4 class="mt-2 text-lg font-black">1. <span class="underline">Ingreso</span>:</h4>
+                <p>Ingresá a nuestra página web con el usuario y la contraseña asignada. Podés cambiar tu contraseña si
+                    querés.</p>
+                <h4 class="mt-2 text-lg font-black">2. <span class="underline">Estimación del IPC</span>:</h4>
+                <p>Hacé tu predicción sobre el valor del IPC en Argentina para el mes de diciembre de este año. Utilizá
+                    tu intuición, investigá tendencias económicas y ¡arriesgate!</p>
+                <h4 class="mt-2 text-lg font-black">3. <span class="underline">Seguimiento</span>:</h4>
+                <p>Mantenete al tanto de las noticias económicas y cualquier cambio en las variables que puedan afectar
+                    el IPC. Ajustá tu estimación si lo considerás necesario.</p>
+                <h4 class="mt-2 text-lg font-black">4. <span class="underline">Cierre de Predicciones</span>:</h4>
+                <p>Las predicciones estarán abiertas hasta una fecha específica antes del cierre del mes de diciembre.
+                    ¡Asegurate de haber realizado tu estimación antes de esa fecha límite!</p>
+                <h4 class="mt-2 text-lg font-black">5. <span class="underline">Anuncio del Ganador</span>:</h4>
+                <p>Una vez que se publiquen los datos oficiales del IPC, calcularemos la diferencia entre las
+                    predicciones de los participantes y el valor real. El participante con la estimación más cercana
+                    será declarado el ganador.</p>
+                <h4 class="mt-2 text-lg font-black">6. <span class="underline">Premios</span>:</h4>
+                <p>¡El ganador recibirá un premio especial! ¡Demuestra que eres el maestro de las predicciones
+                    económicas!</p>
+                <p class="mt-2">¡Únete al Desafío del IPC y demuestra tu destreza en el mundo de las finanzas! Estamos emocionados de
+                    ver quién será el adivino financiero supremo en este apasionante juego. ¡Buena suerte!</p>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

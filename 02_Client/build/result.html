@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>IPC Argentina</title>
+</head>
+
+<body class="bg-slate-300 font-montagu">
+    <main>
+        <div class="flex flex-col bg-sky-600 text-white items-center py-8 shadow-[0_10px_25px_2px_rgba(30,41,59,0.7)]">
+            <h1 class="text-2xl">IPC Argentina</h1>
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+            <p>¡Bienvenido al desafío del Índice de Precios al Consumidor (IPC) en Argentina!</p>
+        </div>
+        <div class="container mx-auto mt-5">
+            <div class="flex flex-col items-end mb-8">
+                <h4><span class="underline">Fecha de cierre</span>: <span id="expired-date">14/01/2024</span></h4>
+            </div>
+
+            <div class="flex flex-col mt-8 items-center">
+                <h1 class="mb-8 text-3xl text-center"><span class="underline">Resultados</span>:</h1>
+                <div
+                    class="p-8 bg-sky-200 flex flex-col items-center text-slate-800 rounded-lg shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] text-xl w-fit mb-8">
+                    <p>Y el ganador es...</p>
+                    <h2 class="text-lg">Nombre Apellido</h2>
+                    <h1 class="text-3xl">126%</h1>
+                </div>
+                <div id="results"
+                    class="flex flex-col bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] w-full">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="underline">Participante</th>
+                                <th class="underline">Fecha</th>
+                                <th class="underline">Valor estimado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">08/12/2023</td>
+                                <td class="text-center">
+                                    <p>120%</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">07/12/2023</td>
+                                <td class="text-center">
+                                    <p>121%</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">23/12/2023</td>
+                                <td class="text-center">
+                                    <p>122%</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">07/12/2023</td>
+                                <td class="text-center">
+                                    <p>123%</p>
+                                </td>
+                            </tr>
+                            <tr class="bg-rose-500">
+                                <td class="text-center">Vos</td>
+                                <td class="text-center">17/12/2023</td>
+                                <td class="text-center">
+                                    <p>125%</p>
+                                </td>
+                            </tr>
+                            <tr class="bg-green-500">
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">15/12/2023</td>
+                                <td class="text-center">
+                                    <p>126%</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">20/12/2023</td>
+                                <td class="text-center">
+                                    <p>130%</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">Nombre Apellido</td>
+                                <td class="text-center">11/12/2023</td>
+                                <td class="text-center">
+                                    <p>136%</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

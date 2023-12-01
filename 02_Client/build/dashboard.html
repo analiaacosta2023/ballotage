@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>IPC Argentina</title>
+</head>
+
+<body class="bg-slate-300 font-montagu">
+    <main>
+        <div class="flex flex-col bg-sky-600 text-white items-center py-8 shadow-[0_10px_25px_2px_rgba(30,41,59,0.7)]">
+            <h1 class="text-2xl">IPC Argentina</h1>
+            <img src="./img/flag.png" alt="Flag" class="w-40">
+            <p>¡Bienvenido al desafío del Índice de Precios al Consumidor (IPC) en Argentina!</p>
+        </div>
+        <div class="container mx-auto mt-5">
+            <div class="flex flex-col items-end mb-8">
+                <h4><span class="underline">Fecha de cierre</span>: <span id="expired-date">14/01/2024</span></h4>
+            </div>
+
+            <div
+                class="p-8 bg-sky-200 flex flex-col md:flex-row items-center text-slate-800 rounded-lg shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] w-full text-xl">
+                <div class="flex md:flex-col md:basis-2/3 items-center">
+                    <h4 class="me-2 md:me-0"><span class="underline">Participante</span>:</h4>
+                    <h2 id="username">Nombre Apellido</h2>
+                </div>
+                <div class="flex md:flex-col md:basis-2/3 items-center">
+                    <h4 class="me-2 md:me-0"><span class="underline">Predicción</span>:</h4>
+                    <h2 id="actual-prediction">125%</h2>
+                </div>
+                <div class="flex md:flex-col md:basis-2/3 items-center">
+                    <h4 class="me-2 md:me-0"><span class="underline">Fecha</span>:</h4>
+                    <h2 id="actual-prediction-date">17/12/2023</h2>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-around mt-8">
+                <div class="flex flex-col text-slate-800 items-center">
+                    <form action="submit"
+                        class="max-w-sm bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+                        <h2 class="mb-2 text-xl"><span class="underline">Nueva predicción</span>:</h2>
+                        <div class="mb-6">
+                            <label class="text-slate-400 font-bold mb-1 md:mb-0 pr-4" for="inline-prediction">
+                                Ingresá tu predicción
+                            </label>
+
+                            <input
+                                class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
+                                id="inline-prediction" type="text" placeholder="Ejemplo: 100%">
+
+                        </div>
+                        <div class="flex justify-center">
+                            <button
+                                class="shadow bg-sky-600 hover:bg-sky-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-lg"
+                                type="button">Enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="flex justify-center">
+                    <div id="past-predictions"
+                        class="flex flex-col bg-slate-700 text-white p-6 rounded-lg mb-6 shadow-[10px_10px_25px_2px_rgba(30,41,59,0.7)] h-fit">
+                        <h2 class="mb-2 text-xl"><span class="underline">Tus antiguas predicciones</span>:</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Valor estimado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center">07/12/2023</td>
+                                    <td class="text-center">
+                                        <p>120%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">09/12/2023</td>
+                                    <td class="text-center">
+                                        <p>123%</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">15/12/2023</td>
+                                    <td class="text-center">
+                                        <p>122%</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

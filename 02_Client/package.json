@@ -1,0 +1,21 @@
+{
+  "name": "02_client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "postcss css/style.css -o build/style.css",
+    "watch": "watch 'npm run build' ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss-cli": "^10.1.0",
+    "watch": "^1.0.2"
+  }
+}
