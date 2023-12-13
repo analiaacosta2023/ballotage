@@ -5,7 +5,7 @@
   "main": "tailwind.config.js",
   "scripts": {
     "build": "postcss css/style.css -o build/style.css",
-    "watch": "watch 'npm run build' ./dist"
+    "watch": "watch 'npm run build' ./build"
   },
   "keywords": [],
   "author": "",

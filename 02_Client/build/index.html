@@ -49,14 +49,14 @@
                             <div class="md:flex md:items-center mb-6">
                                 <div class="md:w-1/3">
                                     <label class="block text-slate-400 font-bold md:text-right mb-1 md:mb-0 pr-4"
-                                        for="inline-full-name">
+                                        for="inline-email">
                                         Usuario
                                     </label>
                                 </div>
-                                <div class="md:w-2/3">
+                                <div class="md:w-2/3" id="email-input">
                                     <input
                                         class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
-                                        id="inline-full-name" type="text" name="Dni" placeholder="email@ejemplo.com">
+                                        id="inline-email" type="text" name="Dni" placeholder="email@ejemplo.com">
                                 </div>
                             </div>
                             <div class="md:flex md:items-center mb-6">
@@ -66,7 +66,7 @@
                                         Contraseña
                                     </label>
                                 </div>
-                                <div class="md:w-2/3">
+                                <div class="md:w-2/3" id="password-input">
                                     <input
                                         class="bg-sky-100 appearance-none border-2 border-sky-600 rounded w-full py-2 px-4 text-slate-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-400"
                                         id="inline-password" type="password" name="Password" placeholder="Contraseña">
@@ -79,7 +79,7 @@
                             </div>
 
                         </form>
-                        <a class="text-sm" href="#">No tienes cuenta? Registrate</a>
+                        <a class="text-sm" href="./register.html">No tienes cuenta? Registrate</a>
                         <a class="text-sm" href="#">Olvidaste la contraseña?</a>
 
                     </div>
@@ -120,6 +120,7 @@
 
     </footer>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
     <script src="./js/login.js"></script>
 </body>
 

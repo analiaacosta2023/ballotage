@@ -5,10 +5,15 @@ const form = document.getElementById('loginForm');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
+
+    const noEmail = isEmpty('email-input')
+    const noPass = isEmpty('password-input')
+
+    if (noEmail || noPass) return
+
     const data = new FormData(form);
     const obj = {};
     data.forEach((value, key) => obj[key] = value);
-
 
     fetch('http://localhost:8080/v1/login', {
         method: 'POST',
@@ -19,17 +24,19 @@ form.addEventListener('submit', e => {
         }
     }).then(async (result) => {
 
+        const data = await result.json()
+        console.log(data)
         if (result.status === 200) {
-            const data = await result.json()
-            console.log(data)
-            if(fechaCierre > new Date()) {
-                window.location.replace('/dashboard')
+
+            if (fechaCierre > new Date()) {
+                window.location.replace('./dashboard.html')
             } else {
-                window.location.replace('/result')
+                window.location.replace('./result.html')
             }
-            
+
         } else {
-            return await result.json().then(errorData => {
+            console.log(data)
+            return data.then(errorData => {
                 throw new Error(errorData.error);
             });
         }
